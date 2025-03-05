@@ -59,7 +59,7 @@ header {
     top: 5px;   
     right: 45px;  
     padding: 6px 12px;
-    background-color:rgba(255, 254, 254, 0.301);
+    background-color:rgb(131 126 126 / 36%);
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
@@ -138,12 +138,16 @@ header {
     padding-block: 20px;
     transform: translate(-50%,-50%);
     border: 3px solid rgb(206, 196, 196);
+    width: 90%;
+    height: 150px;
 } 
 
 #button-container {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 15px;
 }
 
  #form-container {
@@ -228,4 +232,25 @@ img#icon-dm.btn {
     margin-top: 15px;
     font-weight: bold;
 }
-
+#image-link {
+    width: 100%;
+    height: 30px;
+}
+#location {
+    width: 100%;
+    height: 30px;
+}
+.label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+#cancel-btn {
+    font-size: medium;
+    width: 20%;
+    height: 30px;
+}
+#post-btn {
+    font-size: medium;
+    width: 20%;
+    height: 30px;
+}
