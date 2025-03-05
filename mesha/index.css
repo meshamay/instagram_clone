@@ -2,75 +2,102 @@
     --background-color: #ffffff;
     --border-bottom: #979595;
     --background-color2: #fff;
+    --background-color3: rgb(0, 0, 0);
 }
+
 body {
-    font-family:monospace;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
+
 .container {
-    max-width: 1200px;
+    width: 500px;
+    height: 70px;
     margin: 0 auto;
     padding: 3px;
     display: flex;
-    text-align: center;
-    align-content: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: flex-start;
-}
-header {
-    width: 110%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 0;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
     box-sizing: border-box;
 }
+
 .container-head {
     width: 10%;
-    height: 100%;
     display: flex;
     align-items: center;
 }
+
 .logo_img img {
     width: 80px;
-    height: 50%;
+    height: auto;
 }
+
+.profile_img {
+    position: relative;
+    display: inline-block;
+}
+
 .profile_img img {
-    width: 30px;
-    height: 30px;
+    width: 40px;  
     border-radius: 50%;
     object-fit: cover;
+    height: 45px;
 }
+
+#plus-button1 {
+    position: absolute;
+    top: 5px;   
+    right: 45px;  
+    padding: 6px 12px;
+    background-color:rgba(255, 254, 254, 0.301);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #section-content {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
 .posts {
     width: 100%;
     height: auto;
     display: block;
 }
+
 .post {
     background-color: var(--background-color2);
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(255, 253, 253, 0.411);
     overflow: hidden;
     margin-bottom: 20px;
     padding: 15px;
     width: 90%;
     max-width: 500px;
 }
+
 .post-info {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .profile-pic {
     width: 40px;
     height: 40px;
@@ -89,6 +116,43 @@ header {
     font-size: 14px;
     color: #333;
 }
+/* #plus-button1 {
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 30%;
+    background-color: #979595;
+    display: flex;
+} */
+
+#cont-box {
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    z-index: 99;
+    background-color: white;
+    padding: 20px;
+    padding-block: 20px;
+    transform: translate(-50%,-50%);
+    border: 3px solid rgb(206, 196, 196);
+} 
+
+#button-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+ #form-container {
+    backdrop-filter: blur(5px);
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}  
 
 #username {
     font-weight: bold;
@@ -116,44 +180,52 @@ header {
 .container .btn:hover {
     transform: scale(1.1);
 }
+
 .post-actions {
     display: flex;
     align-items: center;
     padding-top: 10px;
 }
-img#icon-heart.btn {
-    width: 30px;
-    height: 30px;
-}
-img#icon-comment.btn {
-    width: 30px;
-    height: 30px;
-}
+
+img#icon-heart.btn,
+img#icon-comment.btn,
 img#icon-dm.btn {
     width: 30px;
     height: 30px;
 }
+
+#user-name {
+    display: flex;
+}
+
+.h1#heart-button {
+    padding: auto;
+}
+
 .span {
     display: flex;
     flex-direction: column-reverse;
     padding: 10px 0;
 }
-.container {
+
+#comment-button {
+    font-size: 15px;
+    font-weight: 400;
+}
+  
+#usercomments {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+    margin-top: 15px;  
+    font-weight: bold;
 }
 
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+#comment-button {
+    margin-left: 10px;
+    margin-top: 1px;
 }
 
-.post {
-    width: 95%;
+#user-name p {
+    margin-top: 15px;
+    font-weight: bold;
 }
 
